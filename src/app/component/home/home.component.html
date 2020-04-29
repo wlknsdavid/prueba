@@ -1,0 +1,26 @@
+<div class="contenedor" style="background-color: darkcyan;    margin: 0px;">
+
+<label for="star" style="color: white; margin: 0px;"><strong>Introduzca dia de nacimiento:</strong></label>
+<br>
+<br>
+<input type="number" [(ngModel)]="modelo" style=" margin: 0px;">
+<br>
+<br>
+<table cellspacing = "0" border="1" *ngIf="modelo==24" style="border-color: white; margin: 0px;">
+    <thead style="color: white;">
+        <th>Fruta1</th>
+        <th>Fruta2</th>
+        <th>Fruta3</th>
+        <th>Fruta4</th>
+        <th>Fruta5</th>
+    </thead>
+    <tbody>
+        <td *ngFor="let elem of frutas" style="color: white;">{{elem}}</td>
+    </tbody>
+</table>
+<br>
+</div>
+
+
+
+
